@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name: </label><input type="text" name="Full Name" id="name" required autofocus placeholder="Full Name" pattern="[a-zA-Z]{6,}" title="Please enter in more than 6 letters">
+            <label for="email">Email: </label><input type="text" name="email" id="email" required autofocus placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in valid email address">
+            <label for="date">Date of Birth: </label><input type="date" name="date" id="date" min="1940-01-01">
+            <label for="phone">Phone Number: </label><input type="text" name="phone" id="phone" required autofocus placeholder="Please enter in your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="Please enter in a phone number in this format"><br>
+            <label for="country">Country </label><select name="country" id="country" required>
+                <option value=""> </option>
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Booking Details</legend>
+            <label for="pickup">Pick-Up Station </label><select name="Pick-Up Station" id="pickup" required>
+                <option value=""> </option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Thika">Thika</option>
+                <option value="Dodoma">Dodoma</option>
+                <option value="Kampala">Kampala</option>
+            </select>
+            <label for="dropoff">Drop-Off Station </label><select name="Drop-Off Station" id="dropoff" required>
+                <option value=""> </option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Thika">Thika</option>
+                <option value="Dodoma">Dodoma</option>
+                <option value="Kampala">Kampala</option>
+            </select>
+            <label for="pickupdate">Pick-Up Date: </label><input type="datetime-local" name="pickupdate" id="pickupdate">
+            <label for="dropoffdate">Pick-Up Date: </label><input type="datetime-local" name="dropoffdate" id="dropoffdate">
+            <p>Car Type?</p>
+            <ul>
+                <li><label for="eco">Economy Car  </label><input type="radio" name="cartype" id="eco" value="Economy Car"></li>
+                <li><label for="suv">Small SUV  </label><input type="radio" name="cartype" id="suv" value="Small SUV"></li>
+                <li><label for="v8">V8  </label><input type="radio" name="cartype" id="v8" value="V8"></li>
+            </ul>
+            <br>
+            <br>
+            <label for="Prices">Prices </label><select name="Prices" id="Prices" required>
+                <option value=""> </option>
+                <option value="2000">Ksh 2000 Economy cars</option>
+                <option value="2500">Ksh 2500 Economy cars</option>
+                <option value="6000">Ksh 6000 Small SUV's</option>
+                <option value="9000">Ksh 9000 V8 cars</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Extra Priviledges</legend>
+            <ul>
+                <li><label for="gps">GPS navigating system </label><input type="radio" name="GPS" id="gps" value="GPS navigating system"></li>
+                <li><label for="boost">Booster </label><input type="radio" name="Booster" id="boost" value="Booster"></li>
+                <li><label for="child">Child Safety Seat </label><input type="radio" name="Child Safety Seat" id="child" value="Child Safety Seat"></li>
+                <li><label for="blue">Bluetooth connectivity </label><input type="radio" name="Bluetooth connectivity" id="blue" value="Bluetooth connectivity"></li>
+            </ul>
+            <br>
+            <label for="Additional">Additional Priviledges </label><br><input type="text" name="Additional" id="Additional" pattern="[a-zA-Z]{6,}" title="Please enter in more than 6 letters">
+
+        </fieldset>
+    </form>
+    <button type="submit" class="sub" id="submit">SUBMIT </button>
+</body>
+</html>
