@@ -12,7 +12,7 @@
     <form action="" method="GET">
         <fieldset>
             <legend>Personal Details</legend>
-            <label for="name">Full Name: </label><input type="text" name="Full Name" id="name" required autofocus placeholder="Full Name" pattern="[a-zA-Z]{6,}" title="Please enter in more than 6 letters">
+            <label for="name">Full Name: </label><input type="text" name="Full Name" id="name" required autofocus placeholder="Full Name" pattern="[a-zA-Z]{3,}" title="Please enter in more than 3 letters">
             <label for="email">Email: </label><input type="text" name="email" id="email" required autofocus placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in valid email address">
             <label for="date">Date of Birth: </label><input type="date" name="date" id="date" min="1940-01-01">
             <label for="phone">Phone Number: </label><input type="text" name="phone" id="phone" required autofocus placeholder="Please enter in your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="Please enter in a phone number in this format"><br>
@@ -49,7 +49,7 @@
                 <option value="Kampala">Kampala</option>
             </select>
             <label for="pickupdate">Pick-Up Date: </label><input type="datetime-local" name="pickupdate" id="pickupdate">
-            <label for="dropoffdate">Pick-Up Date: </label><input type="datetime-local" name="dropoffdate" id="dropoffdate">
+            <label for="dropoffdate">Drop-Off Date: </label><input type="datetime-local" name="dropoffdate" id="dropoffdate">
             <p>Car Type?</p>
             <ul>
                 <li><label for="eco">Economy Car  </label><input type="radio" name="cartype" id="eco" value="Economy Car"></li>
@@ -58,7 +58,7 @@
             </ul>
             <br>
             <br>
-            <label for="Prices">Prices </label><select name="Prices" id="Prices" required>
+            <label for="Prices">Prices </label><br><select name="Prices" id="Prices" required>
                 <option value=""> </option>
                 <option value="2000">Ksh 2000 Economy cars</option>
                 <option value="2500">Ksh 2500 Economy cars</option>
@@ -76,9 +76,9 @@
             </ul>
             <br>
             <label for="Additional">Additional Priviledges </label><br><input type="text" name="Additional" id="Additional" pattern="[a-zA-Z]{6,}" title="Please enter in more than 6 letters">
-
+            <br>
+            <input type="submit" id="submit" value="Submit">
         </fieldset>
     </form>
-    <button type="submit" class="sub" id="submit">SUBMIT </button>
 </body>
 </html>
